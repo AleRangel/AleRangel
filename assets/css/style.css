@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,700&display=swap');
+body{
+    background-color: #171717;
+    font-family: 'Source Code Pro', monospace;
+}
+/* Home */
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+   
+}
+@media (max-width: 1300px) {
+    #particles-js{
+        z-index: -1;
+    }
+}
+
+
+.container-fluid{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
+}
+
+.iconosR, .iconosA{
+    list-style: none;
+    padding: 50px;
+    color: #ffffff;
+    fill: aliceblue;
+    position: fixed;
+    
+}
+.logo-Portada{
+    padding: 20px;
+    position: fixed;
+}
+
+
+.texto{
+    /* padding-left: calc(10vw - 10px); */
+    align-self: center;
+    
+}
+
+.iconosR{
+    align-self: flex-end;
+    top: 1px;
+    padding-right: 10px;
+    font-size: 1.3rem;
+    
+    
+
+}
+
+
+
+.iconosA{
+    padding-top: 100px;
+    padding-left: 10px;
+    bottom: 1px;
+    font-size: 1.5rem;
+}
+
+.logoR{
+    align-self: flex-end;
+    justify-self: right;
+    bottom: 1px;
+}
+.logoA{
+    top: 1px;
+}
+
+.titulo{
+    color: #f84e7b;
+    text-shadow: 0 0 5px #bb2e53 ,  0 0 5px #EC255A ;
+    font-size: calc(3vw + 10px);
+    padding-left: 30px;
+}
+
+.titulo2{
+    color: #FAEDF0;
+    text-shadow: 0 0 5px #ffffff ,  0 0 5px #ffffff ;
+    font-size: calc(2vw + 10px);
+    padding-left: 70px;
+}
+
+.etiquetas-h1, .etiquetas-span{
+    color: #ffffff41;
+    text-shadow: 0 0 15px #f84e7b;
+}
+.etiquetas-span{
+    padding-left: 30px;
+}
+/* Interaciones */
+.iconosR li i:hover{
+    color: #EC255A;
+}
+.iconosR li span{
+    
+}
+
+.desactivar{
+   display: none;
+   opacity: 0; 
+}
+
+
+/* Boton */
+
+
+a{
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin-right: 0;
+    color: #e8a2b5;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;    
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 50px;
+    align-self: center;
+}
+
+a:hover{
+    background: #bb2e53;
+    color: #050801;
+    box-shadow: 0 0 5px #bb2e53,
+                0 0 25px #bb2e53,
+                0 0 50px #bb2e53,
+                0 0 200px #bb2e53;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#bb2e53);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#bb2e53);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#bb2e53);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#bb2e53);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+
+/* Sobre mi */
+.titulos-tabla{
+    opacity: 0;
+    transform: translateX(30px);
+    transition: .5s;
+    
+}
+
+.table{
+    opacity: 0;
+    transform: translateY(10px);    
+    transition: .5s;
+}
+
+.visible{
+    opacity: 1;
+    
+    transform: translateX(0);
+    transition: 2s;
+}
+
+
+.title-resaltado{
+    color: #bb2e53;
+}
+.title-resaltado2{
+    color: #FAEDF0;
+}
+.texto{
+    color: #FAEDF0;
+}
+
+.text-table{
+    color: #FAEDF0;
+}
+
+.table{
+    color: #f1295f;
+    
+}
+caption{
+    color: #FAEDF0;
+}
