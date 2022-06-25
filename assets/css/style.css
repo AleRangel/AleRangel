@@ -22,26 +22,38 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
         
+}
+.texto-titulo{
+    opacity: 0;
 }
 
 .iconosR, .iconosA{
     list-style: none;
     padding: 50px;
     color: #ffffff;
-    fill: aliceblue;
+    
     position: fixed;
     
 }
 .logo-Portada{
     padding: 20px;
     position: fixed;
+    fill: #EC255A ;    
+}
+.logo-Portada:hover{
+    cursor: pointer;
+    fill: #FAEDF0;
 }
 
 
 .texto{
     /* padding-left: calc(10vw - 10px); */
     align-self: center;
+    
+    transition: .5s;
+    
     
 }
 
@@ -112,7 +124,7 @@ body{
 
 
 a{
-    width: 200px;
+    width: 300px;
     position: relative;
     display: inline-block;
     padding: 25px 30px;
@@ -124,9 +136,11 @@ a{
     letter-spacing: 4px;
     overflow: hidden;    
     text-align: center;
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 50px;
     align-self: center;
+    opacity: 0;
+    transition: .5s;
 }
 
 a:hover{
@@ -221,6 +235,9 @@ a span:nth-child(4){
 
 
 /* Sobre mi */
+.section{
+    margin-bottom: 100px;
+}
 .titulos-tabla{
     opacity: 0;
     transform: translateX(30px);
@@ -234,9 +251,14 @@ a span:nth-child(4){
     transition: .5s;
 }
 
+.img-perfilC{
+    opacity: 0;   
+    transform: rotateY(90deg);  
+    transition: .5s;
+}
+
 .visible{
-    opacity: 1;
-    
+    opacity: 1;    
     transform: translateX(0);
     transition: 2s;
 }
