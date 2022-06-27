@@ -29,14 +29,7 @@ body{
     opacity: 0;
 }
 
-.iconosR, .iconosA{
-    list-style: none;
-    padding: 50px;
-    color: #ffffff;
-    
-    position: fixed;
-    
-}
+
 .logo-Portada{
     padding: 20px;
     position: fixed;
@@ -57,23 +50,12 @@ body{
     
 }
 
-.iconosR{
-    align-self: flex-end;
-    top: 1px;
-    padding-right: 10px;
-    font-size: 1.3rem;
-    
-    
-
-}
-
-
 
 .iconosA{
-    padding-top: 100px;
-    padding-left: 10px;
+    
+    
     bottom: 1px;
-    font-size: 1.5rem;
+    
 }
 
 .logoR{
@@ -119,11 +101,94 @@ body{
    opacity: 0; 
 }
 
+.botones-link-div{
+    position: fixed;
+    top: 75%;
+    left: 5px;
+
+}
+
+.botones-link{
+    width: 55px;
+    height: 55px;
+    display: block;
+   
+
+    text-shadow: 0 0 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FAEDF0;
+    transition: all .3s ease;
+
+}
+
+.botones-link p {
+    
+    display: none;
+}
+.botones-link:hover > p{
+    padding-top: 15px;
+    display: block;
+}
+.botones-link:hover{
+    color: #bb2e53;
+    width: 100%;
+    padding: 0 10px;
+    
+}
+/*  */
+
+.botones-link-div-R{
+    position: fixed;
+    top: 5%;
+    right:  20px;
+
+}
+
+.botones-link-R{
+    width: 55px;
+    height: 55px;
+    display: block;
+   
+
+    text-shadow: 0 0 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .3s ease;
+
+}
+
+.botones-link-R p {
+    
+    display: none;
+}
+.botones-link-R:hover > p{
+    padding-top: 15px;
+    display: block;
+}
+.botones-link-R:hover{
+    color: #bb2e53;
+    width: 100%;
+    padding: 0 10px;
+    
+}
+
+
+
+
 
 /* Boton */
 
-
-a{
+.btn-portada{
     width: 300px;
     position: relative;
     display: inline-block;
@@ -143,7 +208,7 @@ a{
     transition: .5s;
 }
 
-a:hover{
+.btn-portada:hover{
     background: #bb2e53;
     color: #050801;
     box-shadow: 0 0 5px #bb2e53,
@@ -152,17 +217,17 @@ a:hover{
                 0 0 200px #bb2e53;
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
-a:nth-child(1){
+.btn-portada:nth-child(1){
     filter: hue-rotate(270deg);
 }
-a:nth-child(2){
+.btn-portada:nth-child(2){
     filter: hue-rotate(110deg);
 }
-a span{
+.btn-portada span{
     position: absolute;
     display: block;
 }
-a span:nth-child(1){
+.btn-portada span:nth-child(1){
     top: 0;
     left: 0;
     width: 100%;
@@ -178,7 +243,7 @@ a span:nth-child(1){
         left: 100%;
     }
 }
-a span:nth-child(2){
+.btn-portada span:nth-child(2){
     top: -100%;
     right: 0;
     width: 2px;
@@ -195,7 +260,7 @@ a span:nth-child(2){
         top: 100%;
     }
 }
-a span:nth-child(3){
+.btn-portada span:nth-child(3){
     bottom: 0;
     right: 0;
     width: 100%;
@@ -214,7 +279,7 @@ a span:nth-child(3){
 }
 
 
-a span:nth-child(4){
+.btn-portada span:nth-child(4){
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -236,7 +301,7 @@ a span:nth-child(4){
 
 /* Sobre mi */
 .section{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .titulos-tabla{
     opacity: 0;
@@ -247,13 +312,13 @@ a span:nth-child(4){
 
 .table{
     opacity: 0;
-    transform: translateY(10px);    
+        
     transition: .5s;
 }
 
 .img-perfilC{
     opacity: 0;   
-    transform: rotateY(90deg);  
+    transform: translateX(50px);
     transition: .5s;
 }
 
