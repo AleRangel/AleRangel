@@ -48,18 +48,27 @@ const callback = (entries) =>{
                     $sobreMi.scrollIntoView(true);
                 })
                 
+                
                 break;
             case "id-sobre-mi":               
 
                 $btn_logosR.addEventListener("click", () => {
                     $skills.scrollIntoView(true);
                 })
+
+                $btn_logosA.addEventListener("click", () =>{
+                    $home.scrollIntoView(true);
+                });
                break;
             case "skills-section":               
 
                 console.log(elementoHTML);
                 $btn_logosR.addEventListener("click", () => {
                     $contactoform.scrollIntoView(true);
+                })
+
+                $btn_logosA.addEventListener("click", () => {
+                    $sobreMi.scrollIntoView(true);
                 })
                break;
 
