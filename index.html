@@ -237,40 +237,41 @@
     <div class="container">
      <section class="contact-wrap" id="contact">
 
-            <form action="" class="contact-form" id="contact-form">
+            <form action="" class="contact-form" id="contact-form" autocomplete="off">
                 <h2 class="title-resaltado2">Contactame</h2>
             <div class="col-sm-12">
                 <div class="input-block">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control">
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="input-block">
                     <label for="">Apellido</label>
-                    <input type="text" class="form-control">
+                    <input name="Apellido" type="text" class="form-control" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="input-block">
                     <label for="">Email</label>
-                    <input type="text" class="form-control">
+                    <input name="Email"type="Email" class="form-control" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="input-block">
                     <label for="">Asunto</label>
-                    <input type="text" class="form-control">
+                    <input name ="Asunto"type="text" class="form-control" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="input-block textarea">
                     <label for="">Deja tu mensaje</label>
-                    <textarea rows="3" type="text" class="form-control"></textarea>
+                    <textarea name="Mensaje"rows="3" type="text" class="form-control" required></textarea>
                 </div>
             </div>
             <div class="col-sm-12">
-                <button class="square-button">Enviar</button>
+                
+                <button class="square-button" id="btn-submit">Enviar</button>
             </div>
         </form>
     </section> 
@@ -285,6 +286,8 @@
 
     <script src="https://kit.fontawesome.com/97b2540957.js" crossorigin="anonymous"></script>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
@@ -293,6 +296,7 @@
 
     <!-- Mis scripts -->
     <script src="assets/js/aplicacion.js"></script>
+    <script src="assets/js/formsubmit.js"></script>
 
 
 
