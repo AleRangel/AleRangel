@@ -2,12 +2,17 @@
 body{
     background-color: #171717;
     font-family: 'Source Code Pro', monospace;
+   
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
 }
 /* Home */
 #particles-js{
     height: 100vh;
     width: 100%;
     position: fixed;
+    z-index: -1;
    
 }
 @media (max-width: 1300px) {
@@ -82,8 +87,8 @@ body{
 }
 
 .etiquetas-h1, .etiquetas-span{
-    color: #ffffff41;
-    text-shadow: 0 0 15px #f84e7b;
+    color: #EC255A;
+    text-shadow: 0 0 15px ;
 }
 .etiquetas-span{
     padding-left: 30px;
@@ -114,7 +119,6 @@ body{
     display: block;
    
 
-    text-shadow: 0 0 10px ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +127,7 @@ body{
     text-decoration: none;
     color: #FAEDF0;
     transition: all .3s ease;
-
+    
 }
 
 .botones-link p {
@@ -135,6 +139,7 @@ body{
     display: block;
 }
 .botones-link:hover{
+    text-shadow: 0 0 10px ;
     color: #bb2e53;
     width: 100%;
     padding: 0 10px;
@@ -155,7 +160,6 @@ body{
     display: block;
    
 
-    text-shadow: 0 0 10px ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +168,7 @@ body{
     text-decoration: none;
     color: #ffffff;
     transition: all .3s ease;
-
+    
 }
 
 .botones-link-R p {
@@ -176,6 +180,7 @@ body{
     display: block;
 }
 .botones-link-R:hover{
+     text-shadow: 0 0 10px ;
     color: #bb2e53;
     width: 100%;
     padding: 0 10px;
@@ -301,7 +306,7 @@ body{
 
 /* Sobre mi */
 .section{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .titulos-tabla{
     opacity: 0;
@@ -349,4 +354,12 @@ body{
 }
 caption{
     color: #FAEDF0;
+}
+
+.iframe {  
+    
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;  
 }
