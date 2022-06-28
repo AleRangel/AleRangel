@@ -13,6 +13,7 @@
 }
 
 
+
 @media (min-width: 320px){
     .cards {
         left: 40%;
@@ -47,12 +48,13 @@
   top: 0;
   left: 0;
   border-radius: 0.8rem;
-  color: #ffffff;
+  color: #f1295f;
   
 }
 
 .cards li:hover{
-    cursor: pointer;
+    
+    color: #ffffff;
     text-shadow: 0 0 10px;
     transition: .5s ;
     
@@ -61,13 +63,18 @@
     
 }
 
-.actions {
+ .actions {
   position: absolute;
   
   left: 51%;
   transform: translateX(-50%);
 }
 
+@media (max-width: 320px) {
+  .actions{
+    left: 0%;
+  }
+}
 @media (max-width: 1980px) {
   .actions{
     left: 49.5%;
@@ -75,20 +82,20 @@
 }
 @media (max-width: 1024px) {
   .actions{
-    left: 52%;
+    left: 53%;
   }
 }
 
 .btn-scroll {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #f1295f;
     padding: 5px 10px;
     border: none;
     background-color: #ffffff00;
     cursor: pointer;
 }
 .btn-scroll:hover {
-    color: #f1295f;
+    color: #ffffff;
 }
 
 /* a {

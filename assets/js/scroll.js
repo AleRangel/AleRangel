@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let iteration = 0; // gets iterated when we scroll all the way to the end or start and wraps around - allows us to smoothly continue the playhead scrubbing in the correct direction.
 
-const spacing = 0.11, // spacing of the cards (stagger)
+const spacing = 0.1, // spacing of the cards (stagger)
   snap = gsap.utils.snap(spacing), // we'll use this to snap the playhead on the seamlessLoop
   cards = gsap.utils.toArray(".cards li"),
   seamlessLoop = buildSeamlessLoop(cards, spacing),
@@ -109,7 +109,7 @@ function buildSeamlessLoop(items, spacing) {
         {
           scale: 1.5,
           opacity: 1,
-          zIndex: 100,
+          zIndex: 1,
           duration: 0.5,
           yoyo: true,
           repeat: 1,
