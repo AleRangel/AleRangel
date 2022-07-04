@@ -100,7 +100,7 @@ observador.observe($tabla);
 observador.observe($text_table);
 observador.observe($miFoto);
 observador.observe($skills);
-observador.observe($contacto)
+/* observador.observe($contacto) */
 
 /* Logos icons */
 
